@@ -47,7 +47,7 @@ $(document).ready(() => {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: false,
-        speed: 300,
+        speed: 700,
         fade: true,
         cssEase: 'linear',
         arrows: true,
