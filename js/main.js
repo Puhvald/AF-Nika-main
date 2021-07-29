@@ -100,14 +100,14 @@ $(document).ready(() => {
     // Скрипт на открытие поп-апов
 
     $('.open-pop-up').click(() => {
-        $('#pop-up').css('display', 'flex');
+        $('#pop-up').fadeIn().css('display', 'flex');
     })
 
     // Скрипт для закрытия поп-апа
 
     $('#pop-up').click((e) => {
         if (e.target.id === 'pop-up' || e.target.id === 'pop-up-close') {
-            $('#pop-up').hide();
+            $('#pop-up').fadeOut();
         }
     });
 
@@ -135,8 +135,8 @@ $(document).ready(() => {
             //     });
             $('#pop-up-request-content').hide();
             $('#pop-up-successful-content').show();
-            $('#request-form').hide();
-            $('#request-successes').show();
+            $('#request-form').fadeOut();
+            $('#request-successes').fadeIn();
         } else {
             if (!popUpName.val()) {
                 $(errorMessage[2]).show();
@@ -207,9 +207,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }
@@ -247,9 +247,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }
@@ -293,9 +293,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }
@@ -339,9 +339,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }
@@ -385,9 +385,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }
@@ -432,9 +432,9 @@ $(document).ready(() => {
                 }
             },
             {
-                breakpoint: 375,
+                breakpoint: 426,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             }

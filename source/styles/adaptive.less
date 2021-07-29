@@ -785,7 +785,7 @@
 
         .advantage-item {
           width: 350px;
-          height: 320px;
+          height: 360px;
 
           &:first-child {
             &::before {
@@ -1238,7 +1238,7 @@
       #advantage-items {
         .advantage-item {
           width: 100%;
-          height: 300px;
+          height: 340px;
         }
       }
     }
@@ -1656,7 +1656,27 @@
 
 }
 
+@media screen and (max-width: 489px) {
+
+  #request {
+    #request-container {
+      #request-successes {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 374px) {
+
+  #main {
+    #main-container {
+      #main-description {
+        font-size: 30px;
+        line-height: 39.7px;
+      }
+    }
+  }
 
   #products {
     #products-container {
@@ -1767,4 +1787,17 @@
     }
   }
 
+  #pop-up {
+    #pop-up-block {
+      width: 280px;
+
+      #pop-up-request-content {
+        padding: 35px 10px 25px;
+      }
+
+      #pop-up-successful-content {
+        padding: 35px 10px 25px;
+      }
+    }
+  }
 }
