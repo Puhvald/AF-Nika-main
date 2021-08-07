@@ -499,7 +499,7 @@ $(document).ready(() => {
         $('#footer-items').fadeIn().css('display', 'flex');
     })
 
-
+    new WOW().init()
 });
 
 
