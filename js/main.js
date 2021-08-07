@@ -479,12 +479,6 @@ $(document).ready(() => {
                 }
             });
 
-            $('#footer-items').click((e) => {
-                if (e.target.className === 'header-footer-item') {
-                    $('#footer-items').fadeOut();
-                }
-            });
-
             $('#footer-close').click(() => {
                 $('#footer-items').fadeOut();
             })
@@ -498,6 +492,18 @@ $(document).ready(() => {
     $('#footer-menu').click(() => {
         $('#footer-items').fadeIn().css('display', 'flex');
     })
+
+
+
+    $(window).on('resize', function () {
+        if ($(window).width() < 769) {
+            $('#footer-items').click((e) => {
+                if (e.target.className === 'header-footer-item') {
+                    $('#footer-items').fadeOut();
+                }
+            });
+        }
+    });
 
     new WOW().init()
 });
